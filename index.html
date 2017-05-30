@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,14 +9,35 @@
 
 <div id="app">
 
-    <p>{{title}}</p>
+    <input v-model="puzzle1">
+    <input v-model="puzzle2">
+    <input v-model="puzzle3">
+    <input v-model="puzzle4">
+    <h1>{{puzzle1}}+{{puzzle2}}+</h1>
+
+        <a v-bind:href="link">google</a>
+
+    </h2>
 
 </div>
+
+
+
 <script>
     new Vue({
       el: '#app',
         data:{
-          title:"cooosssool"
+            puzzle1:'輸入',
+            puzzle2:'輸入2',
+            title:"cooosssool",
+            link:'http://google.com',
+            message2: 1
+        },
+        methods:{
+          sayHello:function () {
+              return this.message2;
+
+          }
         }
 
     });
