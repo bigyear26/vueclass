@@ -1,0 +1,15 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+.row {
+  padding: 10px;
+}
+
+#playGround{
+  background-color: lightgray;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
